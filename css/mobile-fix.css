@@ -1,0 +1,16 @@
+/* Réduction de l'espacement des icônes dans le menu mobile */
+@media (max-width: 991px) {
+    .navbar-nav.ms-auto .nav-item {
+        margin-bottom: 0.3rem !important;
+        padding: 0.2rem 0 !important;
+    }
+    
+    .navbar-nav.ms-auto .nav-link {
+        padding: 0.3rem 1rem !important;
+    }
+    
+    /* Réduire l'espacement global du menu collapsé */
+    .navbar-collapse {
+        margin-top: 0.5rem;
+    }
+}
