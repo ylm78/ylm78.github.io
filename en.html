@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Arnaud YILMAZ Portfolio">
+        <meta name="author" content="Arnaud YILMAZ">
+
+        <title>Arnaud YILMAZ Portfolio</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+        <link href="css/magnific-popup.css" rel="stylesheet">
+        <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="spinner-rotate"></span>    
+            </div>
+        </section>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">Arnaud YILMAZ</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">About</a>
+                        </li>         
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">My Journey</a>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_5">Skills</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_6">Education</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_7">Work</a>
+                        </li>
+     
+                    </ul>
+                
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contactModal" style="cursor: pointer;">
+                                <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- data-bs-toggle and data-bs-target to open the modal by ID -->
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#cvModal" style="cursor: pointer;">
+                                <i class="bi bi-file-earmark-person" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/mzaliArnaud/" target="_blank">
+                                <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/SimiArnaud" target="_blank">
+                                <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <!-- French version -->
+                            <a class="nav-link" href="fr.html">
+                                <img src="images/langues/france_flag.png" alt="Français" style="width: 36px; height: 36px; border-radius: 3px;">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- CV Modal -->
+<div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" style="max-width: 90%;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cvModalLabel">My CV</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" style="overflow: auto;">
+          <!-- Embed or iframe your PDF here -->
+          <iframe src="res/CV_Arnaud_Yilmaz_21_02.pdf"
+                  style="width: 100%; height: 600px; border: none;"
+                  title="CV Preview"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Me</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" 
+                               placeholder="John Doe" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" 
+                               placeholder="johndoe@example.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" 
+                                  placeholder="Hello Arnaud, I would like to..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    <div id="formResponse" class="mt-3 text-center"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- HERO -->
+        <main>
+            <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 col-12">
+                            <div class="hero-text">
+                                <div class="hero-title-wrap d-flex align-items-center mb-3">
+                                    <img src="images/moi.jpeg" 
+                                         class="avatar-image avatar-image-large img-fluid" alt="Profile Photo">
+                                    <h1 class="hero-title ms-3 mb-0">Hello!</h1>
+                                </div>
+
+                                <h2 class="mb-2">I am Arnaud YILMAZ</h2>
+                                <h2 class="mb-2" style="color: rgb(11, 11, 12);">
+                                    Final Year Engineering Student at Efrei Paris
+                                </h2>
+                                <h2 class="mb-2" style="color: #0096FF;">
+                                    Big Data & Machine Learning
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WAVE SHAPE / SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#2ECC71" fill-opacity="1" 
+                          d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+                    </path>
+                </svg>
+            </section>
+
+            <!-- ABOUT -->
+            <section class="about section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <img src="images/IMG_4.jpg" 
+                                 class="about-image img-fluid" alt="Illustration">
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                            <div class="about-thumb">
+                                <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
+                                    <h2 class="text-white me-4 mb-0">About me...</h2>
+                                    <img src="images/moi.jpeg" class="avatar-image img-fluid" alt="Photo">
+                                </div>
+
+                                <h3 class="pt-2 mb-3">Who am I?</h3>
+
+                                <p> Currently in my fourth year at <strong>EFREI Paris</strong>, I am specializing in <strong>Big Data and Machine Learning</strong>. At the same time, I am doing an apprenticeship at <strong>FranceAgriMer</strong> since October 2024. Passionate about innovation and problem-solving, I enjoy exploring fields such as <strong>geopolitics</strong>, <strong>video games</strong>, and everything related to <strong>research and data</strong>. </p> <p> Curious and adaptable, I thrive in collaborative environments and aspire to contribute to <strong>cutting-edge projects</strong> thanks to my dual expertise in <strong>computer science</strong> and <strong>data analysis</strong>. </p> <p> Outside of computer science, I enjoy reading <strong>fantasy novels</strong> and <strong>manga</strong>, as well as playing various team sports such as <strong>football</strong> and <strong>volleyball</strong>. I am also a <strong>private math tutor</strong>, helping students in difficulty to improve their skills. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section_3" class="section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <h2 class="text-white ms-4 mb-0">My Journey</h2>
+                            </div>
+                            <div class="timeline">
+                                <!-- EFREI Paris & FranceAgriMer -->
+                                <div class="timeline-row">
+                                    <a href="#education-efrei" class="timeline-item-link">
+                                        <div class="timeline-item left">
+                                            <div class="timeline-icon">
+                                                <i class="bi bi-mortarboard"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4>EFREI Paris</h4>
+                                                <small>September 2021 - Present</small>
+                                                <p>Master’s in Big Data & Machine Learning.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#work-franceagrimer" class="timeline-item-link">
+                                        <div class="timeline-item right">
+                                            <div class="timeline-icon">
+                                                <i class="bi bi-briefcase"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4>FranceAgriMer</h4>
+                                                <small>October 2025 - Present</small>
+                                                <p>Data Project Manager Intern.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- EFREI Paris & Data Project -->
+                                <div class="timeline-row">
+                                    <a href="#education-efrei-prepa" class="timeline-item-link">
+                                        <div class="timeline-item left">
+                                            <div class="timeline-icon">
+                                                <i class="bi bi-mortarboard"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4>EFREI Paris</h4>
+                                                <small>September 2021 - June 2024</small>
+                                                <p>Preparatory Engineering Cycle.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- Experience in Refrigeration Installation -->
+                                <div class="timeline-row">
+                                    <a href="#education-efrei-init" class="timeline-item-link">
+                                        <div class="timeline-item left">
+                                            <div class="timeline-icon">
+                                                <i class="bi bi-mortarboard"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4>EFREI Paris</h4>
+                                                <small>September 2021 - June 2023</small>
+                                                <p>Preparatory Engineering Cycle.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#work-fridge-installation" class="timeline-item-link">
+                                        <div class="timeline-item right">
+                                            <div class="timeline-icon">
+                                                <i class="bi bi-briefcase"></i>
+                                            </div>
+                                            <div class="timeline-content">
+                                                <h4>Cold Storage Installer</h4>
+                                                <small>July 2020 - October 2024</small>
+                                                <p>Installation and commissioning of refrigeration systems.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- PROJECTS -->
+            <section class="featured section-padding" id="section_4">
+                <div class="container">
+                    <div class="row">
+            
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <img src="images/github.png" 
+                                     class="avatar-image img-fluid" alt="GitHub Logo">
+                                <h2 class="text-white ms-4 mb-0">My Projects</h2>
+                            </div>
+            
+                            <!-- Row of all projects -->
+                            <div class="row pt-lg-5">
+            
+                                <!-- AirportProject (Scala) -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">AirportProject (Scala)</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%;">
+                                            Airport Management Application
+                                        </h4>
+                                        <p>
+                                            A Scala application that <strong>analyzes</strong> three CSV files (countries, airports, runways) 
+                                            and offers <strong>search</strong> by code or approximate name, as well as <strong>report generation</strong>.
+                                        </p>
+                                        <ul>
+                                            <li><strong>Custom CSV parsing</strong> (no external library used)</li>
+                                            <li><strong>Fuzzy matching</strong> via <code>me.xdrop.fuzzywuzzy</code></li>
+                                            <li>Reports (Top 10 countries with most/least airports, etc.)</li>
+                                            <li><strong>JavaFX Interface</strong> and a <strong>CLI mode</strong></li>
+                                            <li><strong>Scala Futures</strong> for parallel processing</li>
+                                        </ul>
+                                        <p>
+                                            Run with <code>sbt clean compile run</code> (GUI by default) or modify <em>mainClass</em> 
+                                            for CLI mode. Includes <strong>tests</strong> via <code>sbt test</code>.
+                                        </p>
+                                        <a href="https://github.com/ylm78/airportProject" 
+                                           class="custom-btn custom-border-btn btn mt-3">
+                                            GitHub Repository
+                                        </a>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center"
+                                             style="height: 35%;">
+                                            <img src="https://cdn-icons-png.flaticon.com/512/5787/5787874.png"
+                                                 style="width: 120px;height: 120px;border-radius: 30px;"
+                                                 alt="Airport Icon">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Kadi - Smart Price Comparison -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Kadi - Price Comparison</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%;">
+                                            Stack: PHP / JavaScript / CSS
+                                        </h4>
+                                        <p>
+                                            Kadi is an intelligent platform that helps you shop at the best price. 
+                                            By selecting a product, the application tells you where to buy it at the most advantageous rate, 
+                                            while taking travel costs into account.
+                                        </p>
+                                        <ul>
+                                            <li>Price comparison based on location</li>
+                                            <li>Optimized routes to minimize costs</li>
+                                            <li>API integration for access to store catalogs</li>
+                                            <li>Intuitive and responsive interface</li>
+                                        </ul>
+                                        <a href="https://github.com/16Noct/Projet_TransverseL3" 
+                                           class="custom-btn custom-border-btn btn mt-3">
+                                            GitHub Repository
+                                        </a>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center"
+                                             style="height: 35%;">
+                                            <img src="images/projets/kadilogo.png" 
+                                                 style="width: 120px;height: 120px;border-radius: 30px;"
+                                                 alt="Kadi Project">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Goalytics - Sports Predictions with Machine Learning -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Goalytics</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%;">
+                                            Sports Predictions with Machine Learning
+                                        </h4>
+                                        <p>
+                                            This project uses machine learning algorithms to analyze historical sports match data 
+                                            and predict future outcomes. Covered sports include football, basketball, tennis, and more.
+                                        </p>
+                                        <ul>
+                                            <li>Data preprocessing and analysis</li>
+                                            <li>Implementation of classification and regression algorithms</li>
+                                            <li>Modeling trends and probability outcomes</li>
+                                            <li>Dashboard visualization of performance</li>
+                                        </ul>
+                                        <a href="https://github.com/ylm78/Goalytics" 
+                                           class="custom-btn custom-border-btn btn mt-3">
+                                            GitHub Repository
+                                        </a>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center"
+                                             style="height: 35%;">
+                                            <img src="images/projets/Goalytics.webp" 
+                                                 style="width: 120px;height: 120px;border-radius: 30px;"
+                                                 alt="Goalytics Project">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Unicold Project - Refrigeration Product Management -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Unicold Project</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%;">
+                                            Refrigeration Product Management Platform
+                                        </h4>
+                                        <p>
+                                            Unicold is a platform that facilitates the management of refrigeration products 
+                                            for companies specializing in cold storage, shelving, and refrigeration equipment.
+                                            The application consists of two parts:
+                                        </p>
+                                        <ul>
+                                            <li><strong>Unicold Front</strong>: Customer interface for browsing products and placing orders.</li>
+                                            <li><strong>Unicold Admin</strong>: Admin panel for managing users, products, and orders.</li>
+                                        </ul>
+                                        <p>
+                                            The platform makes it easier for customers to navigate, place orders, and allows administrators 
+                                            to efficiently manage inventory and sales.
+                                        </p>
+                                        <a href="https://github.com/ylm78/unicold" 
+                                           class="custom-btn custom-border-btn btn mt-3">
+                                            GitHub Repository
+                                        </a>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center"
+                                             style="height: 35%;">
+                                            <img src="images/projets/unicold.jpg" 
+                                                 style="width: 120px;height: 90px;border-radius: 30px;"
+                                                 alt="Unicold Project">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Patent Classification with Machine Learning -->
+                                <div class="col-lg-6 col-12">
+                                    <div class="services-thumb">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">Patent Classification</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%;">
+                                            Machine Learning & Intellectual Property
+                                        </h4>
+                                        <p>
+                                            This project uses machine learning algorithms to analyze patent texts and classify them 
+                                            into the appropriate categories of the <strong>International Patent Classification (IPC)</strong>. 
+                                            Accurate classification is essential for patent research, technology trend analysis, 
+                                            and intellectual property management.
+                                        </p>
+                                        <ul>
+                                            <li>Text preprocessing and vectorization</li>
+                                            <li>Use of advanced NLP models (TF-IDF, Word Embeddings, Transformers)</li>
+                                            <li>Supervised learning with classification algorithms</li>
+                                            <li>Model evaluation and performance optimization</li>
+                                        </ul>
+                                        <a href="https://github.com/ylm78/IPC" 
+                                           class="custom-btn custom-border-btn btn mt-3">
+                                            GitHub Repository
+                                        </a>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center"
+                                             style="height: 35%;">
+                                            <img src="images/projets/ipc.png" 
+                                                 style="width: 120px;height: 120px;border-radius: 30px;"
+                                                 alt="Patent Classification Project">
+                                        </div>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS -->
+            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5" 
+                 style="width: 50%; margin: 0 auto;">
+                <h2 class="text-white ms-4 mb-0">Technical Skills</h2>
+            </div>
+
+            <section class="clients section-padding" id="section_5">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <!-- LANGUAGES & TECHNOLOGIES -->
+                        <div class="col-lg-12 col-12">
+                            <h3 class="text-center mb-5">Languages, Big Data & DevOps</h3>
+                        </div>
+
+                        <div class="row justify-content-center">
+
+                            <!-- Python -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" 
+                                     class="clients-image img-fluid" alt="Python">
+                                <legend style="text-align:center;">Python</legend>
+                            </div>
+
+                            <!-- PySpark / Spark -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://spark.apache.org/images/spark-logo-trademark.png" 
+                                     class="clients-image img-fluid" alt="Spark">
+                                <legend style="text-align:center;">PySpark / Spark</legend>
+                            </div>
+
+                            <!-- SQL -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://logos-marques.com/wp-content/uploads/2023/09/MySQL-Logo-thmb.png" 
+                                     class="clients-image img-fluid" alt="SQL">
+                                <legend style="text-align:center;">SQL</legend>
+                            </div>
+
+                            <!-- Scala -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://cdn.worldvectorlogo.com/logos/scala-4.svg"
+                                     class="clients-image img-fluid" alt="Scala">
+                                <legend style="text-align:center;">Scala</legend>
+                            </div>
+
+                            <!-- Java -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://0adri3n.github.io/assets/img/java.webp" 
+                                     class="clients-image img-fluid" alt="Java">
+                                <legend style="text-align:center;">Java</legend>
+                            </div>
+
+                            <!-- C / C++ -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://0adri3n.github.io/assets/img/clang.png" 
+                                     class="clients-image img-fluid" alt="C/C++">
+                                <legend style="text-align:center;">C/C++</legend>
+                            </div>
+
+                            <!-- Hadoop -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://cdn.worldvectorlogo.com/logos/hadoop.svg"
+                                     class="clients-image img-fluid" alt="Hadoop">
+                                <legend style="text-align:center;">Hadoop</legend>
+                            </div>
+
+                            <!-- AWS -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://cdn.worldvectorlogo.com/logos/aws-2.svg"
+                                     class="clients-image img-fluid" alt="AWS">
+                                <legend style="text-align:center;">AWS (S3, Glue, Athena)</legend>
+                            </div>
+
+                            <!-- Docker -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://cdn.worldvectorlogo.com/logos/docker-4.svg"
+                                     class="clients-image img-fluid" alt="Docker">
+                                <legend style="text-align:center;">Docker</legend>
+                            </div>
+
+                            <!-- Django -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://cdn.worldvectorlogo.com/logos/django-community.svg"
+                                     class="clients-image img-fluid" alt="Django">
+                                <legend style="text-align:center;">Django</legend>
+                            </div>
+
+                            <!-- HTML / CSS / JS -->
+                            <div class="col-lg-2 col-4 ms-auto clients-item-height mb-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" 
+                                     class="clients-image img-fluid" alt="HTML/CSS/JS">
+                                <legend style="text-align:center;">HTML / CSS / JS</legend>
+                            </div>
+                        </div>
+
+                        <!-- HUMAN LANGUAGES -->
+                        <div class="col-lg-12 col-12 mt-5">
+                            <h3 class="text-center mb-5">Languages</h3>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <div class="col-lg-2 col-4 clients-item-height mb-4">
+                                <img src="images/langues/france.png" 
+                                     class="clients-image img-fluid" alt="French">
+                                <legend class="text-center">French: Native</legend>
+                            </div>
+                        
+                            <div class="col-lg-2 col-4 clients-item-height mb-4">
+                                <img src="images/langues/royaume-uni.png" 
+                                     class="clients-image img-fluid" alt="English">
+                                <legend class="text-center">English: Bilingual</legend>
+                            </div>
+                        
+                            <div class="col-lg-2 col-4 clients-item-height mb-4">
+                                <img src="images/langues/turkiye.png" 
+                                     class="clients-image img-fluid" alt="Turkish">
+                                <legend class="text-center">Turkish: Fluent</legend>
+                            </div>
+                        
+                            <div class="col-lg-2 col-4 clients-item-height mb-4">
+                                <img src="images/langues/allemagne.jpeg" 
+                                     class="clients-image img-fluid" alt="German">
+                                <legend class="text-center">German: Basic</legend>
+                            </div>
+                        </div>
+                        
+
+                        <!-- CERTIFICATIONS -->
+                        <div class="col-lg-12 col-12 mt-5">
+                            <h3 class="text-center mb-5">Certifications</h3>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <!-- Azure AI-900 Certification -->
+                            <div class="col-lg-2 col-4 clients-item-height mb-4">
+                                <img src="https://training.cellenza.com/wp-content/uploads/2024/01/AI_Fundamentals-597x600V2.png"
+                                     class="clients-image img-fluid" 
+                                     alt="Azure AI Fundamentals">
+                                <legend style="text-align:center;">Azure AI-900</legend>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="services section-padding" id="section_6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <img src="images/studies.webp" class="avatar-image img-fluid" alt="Icône Études">
+                                <h2 class="text-white ms-4 mb-0">Formation</h2>
+                            </div>
+                            <div class="row pt-lg-5 justify-content-center">
+                                <!-- Efrei Paris -->
+                                <div class="col-lg-8 col-12">
+                                    <div class="services-thumb" id="education-efrei">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0">EFREI Paris</h3>
+                                        </div>
+                                        <h4 style="font-style: italic;font-size: 140%; text-align: center;">
+                                            Master in Big Data & Machine Learning (2021-2026)
+                                        </h4>
+                                        <p style="text-align: center;">
+                                            As a <strong>Big Data and Machine Learning</strong> student at EFREI Paris, 
+                                            I specialize in data analysis, artificial intelligence, and data infrastructure development. 
+                                            My academic journey allows me to combine advanced skills in <strong>Data Engineering</strong> 
+                                            and <strong>Machine Learning</strong> applied to real-world projects.
+                                        </p>
+                                        <ul>
+                                            <li>Machine Learning, Deep Learning</li>
+                                            <li>Data Engineering, Data Lakes</li>
+                                            <li>DevOps & MLOps</li>
+                                            <li>Functional Programming (Scala)</li>
+                                            <li>Cloud (AWS / Azure certifications)</li>
+                                        </ul>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center" style="height: 35%;">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_-VVCpieEvVM9OlQIPqqMD1AWiAsx4vGyP0Q1B1Zscg&s" 
+                                                 style="width: 120px;height: 120px;border-radius: 30px;"
+                                                 alt="EFREI Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORK EXPERIENCE -->
+            <section class="services section-padding" id="section_7">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-12 mx-auto">
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                                <img src="https://t4.ftcdn.net/jpg/05/66/87/49/360_F_566874949_uIQu6n3xiCuAvOIcECfBYfaOu0c8oLBA.jpg"
+                                     class="avatar-image img-fluid" alt="Expérience">
+                                <h2 class="text-white ms-4 mb-0">Expérience Professionnelle</h2>
+                            </div>
+                            <div class="row pt-lg-5 justify-content-center">
+                                <!-- FranceAgriMer -->
+                                <div class="col-lg-8 col-12">
+                                    <div class="services-thumb" id="work-franceagrimer">
+                                        <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                            <h3 class="mb-0 text-center">FranceAgriMer</h3>
+                                        </div>
+                                        <p style="font-style: italic; text-align: center;">
+                                            Data Project Manager Apprentice — October 2024 to Present
+                                        </p>
+                                        <ul>
+                                            <li>Development of a data management and analysis platform for the agricultural sector.</li>
+                                            <li>Optimization and structuring of databases for better tracking of agricultural supply chains.</li>
+                                            <li>Implementation of data processing pipelines for analysis and decision-making.</li>
+                                            <li>Collaboration with business teams to adapt analytical tools to user needs.</li>
+                                        </ul>
+                                        <div class="services-icon-wrap d-flex justify-content-center align-items-center" style="height: 35%;">
+                                            <img src="images/Logo FranceAgrimer.png"
+                                                 style="width: 120px;height: 70px;border-radius: 9px;"
+                                                 alt="FranceAgriMer Logo">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
