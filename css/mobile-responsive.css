@@ -1,0 +1,81 @@
+/* ========================================
+   AMÉLIORATIONS RESPONSIVES MOBILE
+   ======================================== */
+
+/* Optimisation du Hero pour mobile */
+@media screen and (max-width: 991px) {
+    .hero {
+        padding-top: 120px !important;
+        padding-bottom: 180px !important;
+        min-height: 100vh;
+    }
+
+    .hero-text {
+        top: 0 !important;
+        margin-bottom: 60px !important;
+    }
+
+    .hero-title {
+        font-size: 28px !important;
+        padding: 6px 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero h2 {
+        font-size: 24px !important;
+        padding: 6px 18px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .hero-image-wrap {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+    .hero-image {
+        min-width: inherit !important;
+    }
+}
+
+/* Optimisation pour très petits écrans */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding-top: 100px !important;
+        padding-bottom: 150px !important;
+    }
+
+    .hero-title {
+        font-size: 24px !important;
+        padding: 5px 15px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero h2 {
+        font-size: 20px !important;
+        padding: 5px 15px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .hero-image-wrap {
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    /* Réduire l'espacement entre les éléments */
+    .section-padding {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+/* Amélioration de la navbar mobile */
+@media (max-width: 991px) {
+    .navbar-nav.ms-auto .nav-item {
+        margin-bottom: 0.2rem;
+    }
+    
+    .navbar-nav.ms-auto .nav-link {
+        padding-top: 0.3rem;
+        padding-bottom: 0.3rem;
+    }
+}
